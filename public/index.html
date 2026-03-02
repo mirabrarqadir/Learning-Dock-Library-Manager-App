@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Dock Library Manager</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-brand">
+        <img src="/logo.png" alt="Learning Dock Library Logo" class="brand-logo" />
+      </div>
+      <div>
+        <p class="kicker">Your Business Dashboard</p>
+        <h1>Learning Dock Library Manager</h1>
+        <p>Manage students, memberships, payments, and seat occupancy in one place.</p>
+      </div>
+      <div class="refresh-wrap">
+        <button id="refreshBtn">Refresh</button>
+        <p id="syncStatus" class="small"></p>
+      </div>
+    </header>
+
+    <main>
+      <section class="stats" id="stats"></section>
+
+      <section class="layout-card">
+        <div class="section-head">
+          <h2>Bench Layout (Seats 1-45)</h2>
+          <p>Click vacant seat to assign first name. Click occupied seat to vacate.</p>
+        </div>
+        <div class="seat-legend">
+          <span><i class="dot vacant"></i>Vacant</span>
+          <span><i class="dot occupied"></i>Occupied</span>
+        </div>
+        <div id="seatLayout" class="seat-layout"></div>
+      </section>
+
+      <section class="grid-two">
+        <article class="card">
+          <h2>Enroll Student</h2>
+          <form id="enrollForm">
+            <label>Name<input required name="name" /></label>
+            <label>Phone<input required name="phone" placeholder="10-digit number" /></label>
+            <label>Membership Start Date<input required type="date" name="membershipStartDate" /></label>
+            <label>Membership End Date<input required type="date" name="membershipEndDate" /></label>
+            <label>Amount Paid<input required name="amount" type="number" min="1" /></label>
+            <label>Payment Method
+              <select name="method" required>
+                <option value="Online">Online</option>
+                <option value="Cash">Cash</option>
+              </select>
+            </label>
+            <button type="submit">Create Enrollment</button>
+          </form>
+        </article>
+
+        <article class="card">
+          <h2>Auto Import Source</h2>
+          <p class="hint">New Google Form registrations are auto-imported whenever you click Refresh.</p>
+          <p class="small">Linked sheet: <a id="sheetLink" href="#" target="_blank" rel="noopener noreferrer">Open source sheet</a></p>
+          <p class="small">No manual import section required.</p>
+        </article>
+      </section>
+
+      <section class="grid-two">
+        <article class="card">
+          <h2>Pending WhatsApp Receipts (New Only)</h2>
+          <div id="receiptQueue" class="queue"></div>
+        </article>
+        <article class="card">
+          <h2>WhatsApp Membership Reminder</h2>
+          <div id="membershipReminderQueue" class="queue"></div>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Active Students</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Seat</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Membership Alert</th>
+                <th>Amount Paid</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="studentsTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Recent Ended Memberships (Last 3 Days)</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>End Date</th>
+                <th>Amount Paid</th>
+              </tr>
+            </thead>
+            <tbody id="recentEndedTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <div id="revenueModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close="revenue-modal"></div>
+      <section class="modal-panel">
+        <header class="modal-head">
+          <h3 id="revenueModalTitle">Edit Current Month Revenue</h3>
+          <button id="closeRevenueModal" class="ghost-btn">Close</button>
+        </header>
+        <p class="small">Select students/payments to include in current month revenue.</p>
+        <div id="revenueOptions" class="revenue-options"></div>
+        <footer class="modal-foot">
+          <button id="saveRevenueConfigBtn">Save Revenue Selection</button>
+        </footer>
+      </section>
+    </div>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

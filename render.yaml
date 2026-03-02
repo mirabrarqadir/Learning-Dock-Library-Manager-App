@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: learning-dock-library-manager
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GOOGLE_SHEET_URL
+        sync: false
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: RECEIPT_PDF_URL
+        sync: false
+      - key: WHATSAPP_CLOUD_TOKEN
+        sync: false
+      - key: WHATSAPP_PHONE_NUMBER_ID
+        sync: false
