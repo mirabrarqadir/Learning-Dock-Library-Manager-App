@@ -38,9 +38,9 @@
     },
     {
       "id": 7,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_i57c0jcq",
+      "occupantName": "inayat"
     },
     {
       "id": 8,
@@ -206,9 +206,9 @@
     },
     {
       "id": 35,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_d46ebsss",
+      "occupantName": "musadiq"
     },
     {
       "id": 36,
@@ -272,6 +272,62 @@
     }
   ],
   "students": [
+    {
+      "id": "stu_kr9q5h5h",
+      "name": "Nida Shafi Hafiz",
+      "phone": "916005026495",
+      "seatId": null,
+      "membershipStartDate": "2026-03-29T16:01:15.000Z",
+      "membershipEndDate": "2026-06-29T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "nida shafi hafiz|916005026495|2026-03-29T16:01:15.000Z|2026-06-29T06:30:00.000Z",
+      "createdAt": "2026-03-30T06:49:39.972Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_i57c0jcq",
+      "name": "INAYAT ULLAH QADIR",
+      "phone": "919149547676",
+      "seatId": 7,
+      "membershipStartDate": "2026-03-29T09:07:03.000Z",
+      "membershipEndDate": "2026-04-29T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "inayat ullah qadir|919149547676|2026-03-29T09:07:03.000Z|2026-04-29T06:30:00.000Z",
+      "createdAt": "2026-03-30T06:49:39.972Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_d46ebsss",
+      "name": "Musadiq hussain",
+      "phone": "919906900105",
+      "seatId": 35,
+      "membershipStartDate": "2026-03-28T13:31:14.000Z",
+      "membershipEndDate": "2026-04-28T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "musadiq hussain|919906900105|2026-03-28T13:31:14.000Z|2026-04-28T06:30:00.000Z",
+      "createdAt": "2026-03-30T06:49:39.972Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_6fqvw4rv",
+      "name": "MIR ABRAR HABIB",
+      "phone": "918082955328",
+      "seatId": null,
+      "membershipStartDate": "2026-03-28T07:28:40.000Z",
+      "membershipEndDate": "2026-06-28T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "mir abrar habib|918082955328|2026-03-28T07:28:40.000Z|2026-06-28T06:30:00.000Z",
+      "createdAt": "2026-03-30T06:49:39.922Z",
+      "manuallyDeactivated": false
+    },
     {
       "id": "stu_plht2gx3",
       "name": "Sabiro",
@@ -946,13 +1002,53 @@
   ],
   "payments": [
     {
+      "id": "pay_qbi01kcj",
+      "studentId": "stu_kr9q5h5h",
+      "amount": 3000,
+      "paidAt": "2026-03-29T16:01:15.000Z",
+      "method": "Online",
+      "planMonths": 3,
+      "receiptStatus": "pending",
+      "notes": "Auto-imported"
+    },
+    {
+      "id": "pay_rxvsq9iz",
+      "studentId": "stu_i57c0jcq",
+      "amount": 1200,
+      "paidAt": "2026-03-29T09:07:03.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "pending",
+      "notes": "Auto-imported"
+    },
+    {
+      "id": "pay_swga8x4w",
+      "studentId": "stu_d46ebsss",
+      "amount": 1200,
+      "paidAt": "2026-03-28T13:31:14.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported"
+    },
+    {
+      "id": "pay_kzs5wt2h",
+      "studentId": "stu_6fqvw4rv",
+      "amount": 3000,
+      "paidAt": "2026-03-28T07:28:40.000Z",
+      "method": "Online",
+      "planMonths": 3,
+      "receiptStatus": "pending",
+      "notes": "Auto-imported"
+    },
+    {
       "id": "pay_wtv43tdt",
       "studentId": "stu_plht2gx3",
       "amount": 1000,
       "paidAt": "2026-03-24T06:30:00.000Z",
       "method": "Cash",
       "planMonths": 1,
-      "receiptStatus": "pending",
+      "receiptStatus": "skipped",
       "notes": "Manual enrollment"
     },
     {
@@ -1449,13 +1545,51 @@
   ],
   "receiptQueue": [
     {
+      "id": "rcpt_iojt7xwr",
+      "paymentId": "pay_qbi01kcj",
+      "studentId": "stu_kr9q5h5h",
+      "phone": "916005026495",
+      "message": "Hello Nida Shafi Hafiz,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 3000\nPaid on: 29/3/2026\nValid till: 29/6/2026\nThank you.",
+      "status": "pending",
+      "createdAt": "2026-03-30T06:49:39.972Z"
+    },
+    {
+      "id": "rcpt_fq650or1",
+      "paymentId": "pay_rxvsq9iz",
+      "studentId": "stu_i57c0jcq",
+      "phone": "919149547676",
+      "message": "Hello INAYAT ULLAH QADIR,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 29/3/2026\nValid till: 29/4/2026\nThank you.",
+      "status": "pending",
+      "createdAt": "2026-03-30T06:49:39.972Z"
+    },
+    {
+      "id": "rcpt_9wcs9fpa",
+      "paymentId": "pay_swga8x4w",
+      "studentId": "stu_d46ebsss",
+      "phone": "919906900105",
+      "message": "Hello Musadiq hussain,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 28/3/2026\nValid till: 28/4/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-03-30T06:49:39.972Z",
+      "decidedAt": "2026-03-30T06:57:43.966Z"
+    },
+    {
+      "id": "rcpt_do7tnoxx",
+      "paymentId": "pay_kzs5wt2h",
+      "studentId": "stu_6fqvw4rv",
+      "phone": "918082955328",
+      "message": "Hello MIR ABRAR HABIB,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 3000\nPaid on: 28/3/2026\nValid till: 28/6/2026\nThank you.",
+      "status": "pending",
+      "createdAt": "2026-03-30T06:49:39.972Z"
+    },
+    {
       "id": "rcpt_3ghef0fy",
       "paymentId": "pay_wtv43tdt",
       "studentId": "stu_plht2gx3",
       "phone": "919906615625",
       "message": "Hello Sabiro,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1000\nPaid on: 24/3/2026\nValid till: 24/4/2026\nThank you.",
-      "status": "pending",
-      "createdAt": "2026-03-28T07:05:40.587Z"
+      "status": "skipped",
+      "createdAt": "2026-03-28T07:05:40.587Z",
+      "decidedAt": "2026-03-30T06:57:46.329Z"
     },
     {
       "id": "rcpt_zj9dl90z",
@@ -1889,6 +2023,27 @@
     }
   ],
   "imports": [
+    {
+      "id": "imp_dpt478ib",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-03-30T07:02:27.787Z",
+      "createdCount": 0,
+      "skippedCount": 25
+    },
+    {
+      "id": "imp_qszkykaq",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-03-30T06:50:54.988Z",
+      "createdCount": 0,
+      "skippedCount": 25
+    },
+    {
+      "id": "imp_70ysz9q3",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-03-30T06:49:39.973Z",
+      "createdCount": 4,
+      "skippedCount": 21
+    },
     {
       "id": "imp_wyy6jiki",
       "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
@@ -4167,8 +4322,12 @@
   ],
   "meta": {
     "version": 10,
-    "lastAutoImportAt": "2026-03-28T07:03:24.611Z",
+    "lastAutoImportAt": "2026-03-30T07:02:27.787Z",
     "importSeenKeys": [
+      "nida shafi hafiz|916005026495|2026-03-29T16:01:15.000Z|2026-06-29T06:30:00.000Z",
+      "inayat ullah qadir|919149547676|2026-03-29T09:07:03.000Z|2026-04-29T06:30:00.000Z",
+      "musadiq hussain|919906900105|2026-03-28T13:31:14.000Z|2026-04-28T06:30:00.000Z",
+      "mir abrar habib|918082955328|2026-03-28T07:28:40.000Z|2026-06-28T06:30:00.000Z",
       "musadiq hassan bhat|917889669770|2026-03-08T05:39:11.000Z|2026-04-08T06:30:00.000Z",
       "mohammad danish|917051475288|2026-03-08T05:33:54.000Z|2026-04-08T06:30:00.000Z",
       "abc|919906685937|2026-02-25T16:01:34.000Z|2026-03-25T06:30:00.000Z",
@@ -4204,6 +4363,8 @@
         "stu:stu_7uwcm928"
       ],
       "2026-03": [
+        "stu:stu_kr9q5h5h",
+        "stu:stu_6fqvw4rv",
         "stu:stu_v0828thh"
       ]
     }

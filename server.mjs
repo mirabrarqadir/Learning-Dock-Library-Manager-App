@@ -9,17 +9,6 @@ const __dirname = path.dirname(__filename);
 const PORT = process.env.PORT || 3000;
 const STORE_PATH = path.join(__dirname, "data", "store.json");
 const PUBLIC_DIR = path.join(__dirname, "public");
-const SUPABASE_URL = String(process.env.SUPABASE_URL || "").trim();
-const SUPABASE_KEY = String(
-  process.env.SUPABASE_SERVICE_ROLE_KEY ||
-    process.env.SUPABASE_ANON_KEY ||
-    process.env.SUPABASE_PUBLISHABLE_KEY ||
-    ""
-).trim();
-const USE_SUPABASE_STORE = Boolean(SUPABASE_URL && SUPABASE_KEY);
-const SUPABASE_APP_STATE_URL = USE_SUPABASE_STORE
-  ? `${SUPABASE_URL.replace(/\/$/, "")}/rest/v1/app_state`
-  : "";
 const AUTO_IMPORT_SHEET_URL =
   process.env.GOOGLE_SHEET_URL ||
   "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/edit?usp=sharing";
@@ -394,76 +383,22 @@ function toCsvUrl(googleLink) {
   return googleLink;
 }
 
-function makeInitialStore() {
-  return {
-    seats: defaultSeats(),
-    students: [],
-    payments: [],
-    receiptQueue: [],
-    imports: [],
-    meta: { version: 3, lastAutoImportAt: null, importSeenKeys: [] }
-  };
-}
-
-async function fetchSupabaseStore() {
-  const response = await fetch(`${SUPABASE_APP_STATE_URL}?id=eq.main&select=payload`, {
-    headers: {
-      apikey: SUPABASE_KEY,
-      Authorization: `Bearer ${SUPABASE_KEY}`,
-      Accept: "application/json"
-    }
-  });
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`Supabase read failed: ${response.status} ${text.slice(0, 200)}`);
-  }
-
-  const rows = await response.json();
-  if (!Array.isArray(rows) || !rows.length || !rows[0]?.payload) {
-    const initial = makeInitialStore();
+async function loadStore() {
+  if (!existsSync(STORE_PATH)) {
+    const initial = {
+      seats: defaultSeats(),
+      students: [],
+      payments: [],
+      receiptQueue: [],
+      imports: [],
+      meta: { version: 3, lastAutoImportAt: null, importSeenKeys: [] }
+    };
     await writeStore(initial);
     return initial;
   }
 
-  return rows[0].payload;
-}
-
-async function writeSupabaseStore(store) {
-  const response = await fetch(SUPABASE_APP_STATE_URL, {
-    method: "POST",
-    headers: {
-      apikey: SUPABASE_KEY,
-      Authorization: `Bearer ${SUPABASE_KEY}`,
-      "Content-Type": "application/json",
-      Prefer: "resolution=merge-duplicates"
-    },
-    body: JSON.stringify({
-      id: "main",
-      payload: store
-    })
-  });
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`Supabase write failed: ${response.status} ${text.slice(0, 200)}`);
-  }
-}
-
-async function loadStore() {
-  let parsed;
-  if (USE_SUPABASE_STORE) {
-    parsed = await fetchSupabaseStore();
-  } else {
-    if (!existsSync(STORE_PATH)) {
-      const initial = makeInitialStore();
-      await writeStore(initial);
-      return initial;
-    }
-
-    const raw = await readFile(STORE_PATH, "utf8");
-    parsed = JSON.parse(raw);
-  }
+  const raw = await readFile(STORE_PATH, "utf8");
+  const parsed = JSON.parse(raw);
 
   if (!Array.isArray(parsed.seats) || parsed.seats.length !== 45) parsed.seats = defaultSeats();
   if (!Array.isArray(parsed.students)) parsed.students = [];
@@ -710,10 +645,6 @@ async function loadStore() {
 }
 
 async function writeStore(store) {
-  if (USE_SUPABASE_STORE) {
-    await writeSupabaseStore(store);
-    return;
-  }
   await writeFile(STORE_PATH, JSON.stringify(store, null, 2), "utf8");
 }
 
