@@ -120,6 +120,8 @@ function parseDateValue(value, preferMonthFirst = false) {
 function parseDateInputYmd(value) {
   const raw = String(value || "").trim();
   if (!/^\d{4}-\d{2}-\d{2}$/.test(raw)) return null;
+  const year = Number(raw.slice(0, 4));
+  if (!Number.isFinite(year) || year < 2000 || year > 2100) return null;
   // Use local noon to avoid timezone edge-cases that can display previous day.
   const dt = new Date(`${raw}T12:00:00`);
   if (Number.isNaN(dt.getTime())) return null;
@@ -131,6 +133,25 @@ function addMonthsPreserveDate(startIso, months) {
   if (Number.isNaN(start.getTime())) return null;
 
   const m = Math.max(1, Number(months || 1));
+  const year = start.getFullYear();
+  const monthIndex = start.getMonth();
+  const day = start.getDate();
+
+  const targetMonthIndex = monthIndex + m;
+  const targetYear = year + Math.floor(targetMonthIndex / 12);
+  const finalMonthIndex = ((targetMonthIndex % 12) + 12) % 12;
+  const lastDay = new Date(targetYear, finalMonthIndex + 1, 0).getDate();
+  const finalDay = Math.min(day, lastDay);
+
+  const out = new Date(targetYear, finalMonthIndex, finalDay, 12, 0, 0, 0);
+  return out.toISOString();
+}
+
+function shiftMonthsPreserveDate(startIso, deltaMonths) {
+  const start = new Date(startIso || 0);
+  if (Number.isNaN(start.getTime())) return null;
+
+  const m = Math.trunc(Number(deltaMonths || 0));
   const year = start.getFullYear();
   const monthIndex = start.getMonth();
   const day = start.getDate();
@@ -264,6 +285,36 @@ function deactivateStudentRecord(store, student, reason = "") {
     }
     student.seatId = null;
   }
+}
+
+function syncCurrentStudentStates(store) {
+  let changed = false;
+
+  for (const student of store.students) {
+    const shouldBeActive =
+      !student.manuallyDeactivated &&
+      !student.deactivatedAt &&
+      (student.membershipEndDate ? isOnOrAfterToday(student.membershipEndDate) : student.status === "active");
+
+    const nextStatus = shouldBeActive ? "active" : "inactive";
+    if (student.status !== nextStatus) {
+      student.status = nextStatus;
+      changed = true;
+    }
+
+    if (nextStatus !== "active" && student.seatId) {
+      const seat = store.seats.find((s) => Number(s.id) === Number(student.seatId));
+      if (seat && seat.studentId === student.id) {
+        seat.status = "vacant";
+        seat.studentId = null;
+        seat.occupantName = null;
+      }
+      student.seatId = null;
+      changed = true;
+    }
+  }
+
+  return changed;
 }
 
 function cleanupDuplicateActiveIdentities(store) {
@@ -610,6 +661,36 @@ async function loadStore() {
     parsed.meta.version = 10;
   }
 
+  if (parsed.meta.version < 11) {
+    const latestPaymentByStudent = getLatestPaymentByStudent(parsed.payments);
+    for (const s of parsed.students) {
+      const pay = latestPaymentByStudent[s.id];
+      if (!pay) continue;
+      if (!(s.manualDateOverride || pay.manualDateOverride)) continue;
+
+      const start = new Date(s.membershipStartDate || 0);
+      const end = new Date(s.membershipEndDate || 0);
+      const paidAt = new Date(pay.paidAt || 0);
+      if (Number.isNaN(end.getTime())) continue;
+
+      const startYear = Number.isNaN(start.getTime()) ? 0 : start.getFullYear();
+      const paidAtYear = Number.isNaN(paidAt.getTime()) ? 0 : paidAt.getFullYear();
+      const monthSpan = Number.isNaN(start.getTime())
+        ? 999
+        : Math.abs((end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth()));
+      const planMonths = sanitizePlanMonths(pay.planMonths || 1);
+
+      if (startYear < 2000 || paidAtYear < 2000 || monthSpan > planMonths + 1) {
+        const fixedStart = shiftMonthsPreserveDate(s.membershipEndDate, -planMonths);
+        if (fixedStart) {
+          s.membershipStartDate = fixedStart;
+          pay.paidAt = fixedStart;
+        }
+      }
+    }
+    parsed.meta.version = 11;
+  }
+
   if (!parsed.meta.revenueExclusionsByMonth || typeof parsed.meta.revenueExclusionsByMonth !== "object") {
     parsed.meta.revenueExclusionsByMonth = {};
   }
@@ -639,6 +720,11 @@ async function loadStore() {
     parsed.meta.lastDuplicateCleanupAt = nowIso();
   }
 
+  const syncedCurrentStates = syncCurrentStudentStates(parsed);
+  if (syncedCurrentStates) {
+    parsed.meta.lastStateSyncAt = nowIso();
+  }
+
   await writeStore(parsed);
 
   return parsed;
@@ -650,14 +736,15 @@ async function writeStore(store) {
 
 function monthNameByOffset(offset) {
   const d = new Date();
+  d.setDate(1);
   d.setMonth(d.getMonth() + offset);
   return d.toLocaleString("en-US", { month: "long" });
 }
 
 function monthDateByOffset(offset) {
   const d = new Date();
-  d.setMonth(d.getMonth() + offset);
   d.setDate(1);
+  d.setMonth(d.getMonth() + offset);
   d.setHours(12, 0, 0, 0);
   return d;
 }
@@ -690,12 +777,15 @@ function monthLabelFromDate(date) {
   return date.toLocaleString("en-US", { month: "long", year: "numeric" });
 }
 
-function getMonthlyLatestRevenueEntries(store, offset = 0) {
-  const d = new Date();
-  d.setMonth(d.getMonth() + offset);
+function getMonthlyLatestRevenueEntriesForDate(store, date) {
+  const d = new Date(date);
+  d.setDate(1);
+  d.setHours(12, 0, 0, 0);
   const m = d.getMonth();
   const y = d.getFullYear();
   const monthKey = getMonthKey(d);
+  const currentMonthKey = getMonthKey(monthDateByOffset(0));
+  const isPastMonth = monthKey < currentMonthKey;
   const studentById = new Map(store.students.map((s) => [s.id, s]));
   const latestByRevenueKey = new Map();
 
@@ -704,7 +794,7 @@ function getMonthlyLatestRevenueEntries(store, offset = 0) {
     if (pd.getMonth() !== m || pd.getFullYear() !== y) continue;
 
     const student = studentById.get(p.studentId);
-    if (offset < 0 && student?.manuallyDeactivated && student.keepRevenueCurrentMonth !== true) {
+    if (isPastMonth && student?.manuallyDeactivated) {
       continue;
     }
     const revenueKey = student?.id ? `stu:${student.id}` : `pay:${p.id}`;
@@ -731,8 +821,12 @@ function getMonthlyLatestRevenueEntries(store, offset = 0) {
   return { monthKey, entries: Array.from(latestByRevenueKey.values()) };
 }
 
-function monthRevenue(store, offset = 0) {
-  const { monthKey, entries } = getMonthlyLatestRevenueEntries(store, offset);
+function getMonthlyLatestRevenueEntries(store, offset = 0) {
+  return getMonthlyLatestRevenueEntriesForDate(store, monthDateByOffset(offset));
+}
+
+function monthRevenueForDate(store, date) {
+  const { monthKey, entries } = getMonthlyLatestRevenueEntriesForDate(store, date);
   const excluded = new Set((store.meta.revenueExclusionsByMonth?.[monthKey] || []).map(String));
   let total = 0;
   for (const entry of entries) {
@@ -746,6 +840,10 @@ function monthRevenue(store, offset = 0) {
     total += Number(entry.amount || 0);
   }
   return total;
+}
+
+function monthRevenue(store, offset = 0) {
+  return monthRevenueForDate(store, monthDateByOffset(offset));
 }
 
 function getActiveStudentsRevenueEntries(store) {
@@ -1000,13 +1098,14 @@ async function handleDashboard(req, res) {
     ...s,
     amountPaid: Number(latestPaymentByStudent[s.id]?.amount || 0)
   }));
+  const currentActiveStudents = studentsWithAmounts.filter((s) => isActiveStudent(s));
 
   json(res, 200, {
     stats: {
       totalSeats: store.seats.length,
       occupiedSeats,
       vacantSeats: store.seats.length - occupiedSeats,
-      activeStudents: getActiveStudentsRevenueEntries(store).length,
+      activeStudents: currentActiveStudents.length,
       currentMonthRevenue: currentMonthRevenueFromActiveSelection(store),
       previousMonthRevenue: monthRevenue(store, -1),
       currentMonthLabel: `${monthNameByOffset(0)} Revenue`,
@@ -1253,6 +1352,7 @@ async function handleUpdateStudentMembershipDates(req, res, studentIdInput) {
 
   const latestPayment = getLatestPaymentByStudent(store.payments)[studentId];
   if (latestPayment) {
+    latestPayment.paidAt = membershipStartDate;
     latestPayment.planMonths = sanitizePlanMonths(estimatePlanMonths(membershipStartDate, membershipEndDate));
     latestPayment.manualDateOverride = true;
     latestPayment.manualDateUpdatedAt = nowIso();
@@ -1287,8 +1387,7 @@ async function handleGetRevenueConfig(req, res, url) {
   const monthKeyRaw = url?.searchParams?.get("monthKey");
   const targetMonthDate = monthKeyRaw ? parseMonthKey(monthKeyRaw) : monthDateByOffset(0);
   if (!targetMonthDate) return badRequest(res, "Invalid monthKey. Expected YYYY-MM");
-  const offset = monthOffsetFromDate(targetMonthDate);
-  const { monthKey, entries } = getMonthlyLatestRevenueEntries(store, offset);
+  const { monthKey, entries } = getMonthlyLatestRevenueEntriesForDate(store, targetMonthDate);
   const excluded = new Set((store.meta.revenueExclusionsByMonth?.[monthKey] || []).map(String));
   const options = entries
     .map((e) => ({
@@ -1327,8 +1426,7 @@ async function handleSaveRevenueConfig(req, res, url) {
   const monthKeyRaw = String(body.monthKey || url?.searchParams?.get("monthKey") || "");
   const targetMonthDate = monthKeyRaw ? parseMonthKey(monthKeyRaw) : monthDateByOffset(0);
   if (!targetMonthDate) return badRequest(res, "Invalid monthKey. Expected YYYY-MM");
-  const offset = monthOffsetFromDate(targetMonthDate);
-  const { monthKey, entries } = getMonthlyLatestRevenueEntries(store, offset);
+  const { monthKey, entries } = getMonthlyLatestRevenueEntriesForDate(store, targetMonthDate);
   const allRevenueKeys = entries.map((e) => String(e.key || e.phone));
   const includedSet = new Set(includedRevenueKeys);
   const excluded = allRevenueKeys.filter((id) => !includedSet.has(id));

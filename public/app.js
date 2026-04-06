@@ -74,18 +74,18 @@ function isRecentlyEnded(student) {
   if (student.manuallyDeactivated) return false;
   if (!student.membershipEndDate) return false;
   const left = daysUntilEnd(student.membershipEndDate);
-  return left !== null && left <= -1 && left >= -3;
+  return left !== null && left <= -1 && left >= -10;
 }
 
 function makeMembershipReminderMessage(student) {
   const left = daysUntilEnd(student.membershipEndDate);
-  const dayText = left === 1 ? "1 day" : "2 days";
+  const dayText = left === 0 ? "today" : left === 1 ? "1 day" : "2 days";
   const firstName = String(student.name || "").trim().split(/\s+/)[0] || "Student";
   const endDate = fmtDate(student.membershipEndDate);
   return [
     `Hello ${firstName},`,
     "",
-    `This is a gentle reminder that your Learning Dock Library membership will expire in ${dayText}.`,
+    `This is a gentle reminder that your Learning Dock Library membership will expire ${left === 0 ? dayText : `in ${dayText}`}.`,
     `Membership End Date: ${endDate}`,
     "Kindly renew your membership at your convenience.",
     "We hope you are having a productive and comfortable study experience.",
@@ -225,13 +225,13 @@ function renderSeatLayout(seats) {
 }
 
 function renderStudents(students) {
-  const startTs = (s) =>
-    new Date(s.membershipStartDate || s.joinedAt || s.createdAt || 0).getTime();
+  const createdTs = (s) =>
+    new Date(s.createdAt || s.joinedAt || s.membershipStartDate || 0).getTime();
 
   const active = students
     .filter((s) => isStudentCurrentlyActive(s))
     .sort((a, b) => {
-      const diff = startTs(a) - startTs(b);
+      const diff = createdTs(a) - createdTs(b);
       if (diff !== 0) return diff;
       return String(a.id || "").localeCompare(String(b.id || ""));
     });
@@ -313,7 +313,7 @@ function renderMembershipReminders(students) {
     .filter((s) => {
       if (!isStudentCurrentlyActive(s)) return false;
       const left = daysUntilEnd(s.membershipEndDate);
-      if (left !== 1) return false;
+      if (left !== 1 && left !== 0) return false;
       const alreadySentForCurrentEnd =
         String(s.membershipReminderSentForEndDate || "") === String(s.membershipEndDate || "");
       return !alreadySentForCurrentEnd;
@@ -327,14 +327,14 @@ function renderMembershipReminders(students) {
 
   if (!dueSoon.length) {
     membershipReminderQueueEl.innerHTML =
-      `<p class="small">No reminders due. Students ending in 1 day will appear here.</p>`;
+      `<p class="small">No reminders due. Students ending in 1 day or today will appear here.</p>`;
     return;
   }
 
   membershipReminderQueueEl.innerHTML = dueSoon
     .map((s) => {
       const left = daysUntilEnd(s.membershipEndDate);
-      const alertText = left === 1 ? "Ending in 1 day" : "Ending in 2 days";
+      const alertText = left === 0 ? "Ends today" : "Ending in 1 day";
       return `
       <article class="queue-item">
         <strong>${s.name}</strong>
