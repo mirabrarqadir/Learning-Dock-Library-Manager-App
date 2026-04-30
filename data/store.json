@@ -800,13 +800,15 @@
       "phone": "917051717735",
       "seatId": 39,
       "membershipStartDate": "2026-03-08T06:30:00.000Z",
-      "membershipEndDate": "2026-05-08T06:30:00.000Z",
+      "membershipEndDate": "2026-04-30T06:30:00.000Z",
       "status": "active",
       "source": "manual",
       "notes": "",
       "createdAt": "2026-03-09T13:42:26.797Z",
       "manuallyDeactivated": false,
-      "manualDateOverride": true
+      "manualDateOverride": true,
+      "membershipReminderSentForEndDate": "2026-04-30T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-30T07:04:04.682Z"
     },
     {
       "id": "stu_nmvgb5xp",
@@ -1844,7 +1846,7 @@
       "receiptStatus": "skipped",
       "notes": "Manual enrollment",
       "manualDateOverride": true,
-      "manualDateUpdatedAt": "2026-04-06T05:37:05.580Z"
+      "manualDateUpdatedAt": "2026-04-30T07:04:03.707Z"
     },
     {
       "id": "pay_hskf68it",
@@ -3073,6 +3075,20 @@
     }
   ],
   "imports": [
+    {
+      "id": "imp_637do3ui",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T07:03:38.737Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_0c7rx6u7",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T07:03:36.121Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
     {
       "id": "imp_b9khnsxc",
       "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
@@ -7717,7 +7733,7 @@
   ],
   "meta": {
     "version": 11,
-    "lastAutoImportAt": "2026-04-30T06:56:09.378Z",
+    "lastAutoImportAt": "2026-04-30T07:03:38.737Z",
     "importSeenKeys": [
       "munazir showkat|919906927098|2026-04-28T12:27:10.000Z|2026-05-28T06:30:00.000Z",
       "mohammad aaqib bhat|918825001731|2026-04-28T05:35:26.000Z|2026-05-28T06:30:00.000Z",
