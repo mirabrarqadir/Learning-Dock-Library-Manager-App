@@ -38,9 +38,9 @@
     },
     {
       "id": 7,
-      "status": "occupied",
-      "studentId": "stu_i57c0jcq",
-      "occupantName": "inayat"
+      "status": "vacant",
+      "studentId": null,
+      "occupantName": null
     },
     {
       "id": 8,
@@ -56,9 +56,9 @@
     },
     {
       "id": 10,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_79xv1y9f",
+      "occupantName": "faisal"
     },
     {
       "id": 11,
@@ -68,14 +68,14 @@
     },
     {
       "id": 12,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_xy90h3ur",
+      "occupantName": "Mohammad"
     },
     {
       "id": 13,
       "status": "occupied",
-      "studentId": "stu_31ufzjai",
+      "studentId": "stu_cxki38nr",
       "occupantName": "sajid"
     },
     {
@@ -116,9 +116,9 @@
     },
     {
       "id": 20,
-      "status": "occupied",
-      "studentId": "stu_g0qasxae",
-      "occupantName": "rezwan"
+      "status": "vacant",
+      "studentId": null,
+      "occupantName": null
     },
     {
       "id": 21,
@@ -129,7 +129,7 @@
     {
       "id": 22,
       "status": "occupied",
-      "studentId": "stu_plht2gx3",
+      "studentId": "stu_ndqoyir7",
       "occupantName": "sabiro"
     },
     {
@@ -146,9 +146,9 @@
     },
     {
       "id": 25,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_mep4bp4r",
+      "occupantName": "gawhar"
     },
     {
       "id": 26,
@@ -158,9 +158,9 @@
     },
     {
       "id": 27,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_hkp81hgi",
+      "occupantName": "abid"
     },
     {
       "id": 28,
@@ -170,44 +170,44 @@
     },
     {
       "id": 29,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_dqxvzayy",
+      "occupantName": "suhaib"
     },
     {
       "id": 30,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_ew90jt9e",
+      "occupantName": "Tauseef-ul-hamid"
     },
     {
       "id": 31,
-      "status": "occupied",
-      "studentId": "stu_7zrf9jhb",
-      "occupantName": "aftab"
+      "status": "vacant",
+      "studentId": null,
+      "occupantName": null
     },
     {
       "id": 32,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_274fwtey",
+      "occupantName": "ishtiyaq"
     },
     {
       "id": 33,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_v2sab61m",
+      "occupantName": "arbeena"
     },
     {
       "id": 34,
-      "status": "occupied",
-      "studentId": "stu_296cp7vf",
-      "occupantName": "umer"
+      "status": "vacant",
+      "studentId": null,
+      "occupantName": null
     },
     {
       "id": 35,
       "status": "occupied",
-      "studentId": "stu_d46ebsss",
+      "studentId": "stu_wmwkj9vy",
       "occupantName": "musadiq"
     },
     {
@@ -249,8 +249,8 @@
     {
       "id": 42,
       "status": "occupied",
-      "studentId": "stu_nmvgb5xp",
-      "occupantName": "saqiya"
+      "studentId": "stu_w30zgscm",
+      "occupantName": "insha"
     },
     {
       "id": 43,
@@ -260,9 +260,9 @@
     },
     {
       "id": 44,
-      "status": "vacant",
-      "studentId": null,
-      "occupantName": null
+      "status": "occupied",
+      "studentId": "stu_sei6zcg1",
+      "occupantName": "suzain"
     },
     {
       "id": 45,
@@ -273,10 +273,238 @@
   ],
   "students": [
     {
+      "id": "stu_ndqoyir7",
+      "name": "Sabiro",
+      "phone": "919906615625",
+      "seatId": 22,
+      "membershipStartDate": "2026-04-25T06:30:00.000Z",
+      "membershipEndDate": "2026-05-25T06:30:00.000Z",
+      "status": "active",
+      "source": "manual",
+      "notes": "",
+      "createdAt": "2026-04-29T04:57:01.294Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_9mt9v9bl",
+      "name": "Munazir Showkat",
+      "phone": "919906927098",
+      "seatId": null,
+      "membershipStartDate": "2026-04-28T12:27:10.000Z",
+      "membershipEndDate": "2026-05-28T06:30:00.000Z",
+      "status": "inactive",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form | Deactivated from dashboard",
+      "importSourceKey": "munazir showkat|919906927098|2026-04-28T12:27:10.000Z|2026-05-28T06:30:00.000Z",
+      "createdAt": "2026-04-29T04:19:06.393Z",
+      "manuallyDeactivated": true,
+      "keepRevenueCurrentMonth": true,
+      "deactivatedAt": "2026-04-29T04:19:21.268Z"
+    },
+    {
+      "id": "stu_xy90h3ur",
+      "name": "Mohammad Aaqib Bhat",
+      "phone": "918825001731",
+      "seatId": 12,
+      "membershipStartDate": "2026-04-28T05:35:26.000Z",
+      "membershipEndDate": "2026-05-28T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "mohammad aaqib bhat|918825001731|2026-04-28T05:35:26.000Z|2026-05-28T06:30:00.000Z",
+      "createdAt": "2026-04-28T05:59:20.063Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_wmwkj9vy",
+      "name": "Musadiq Hussain",
+      "phone": "919906900105",
+      "seatId": 35,
+      "membershipStartDate": "2026-04-29T06:30:00.000Z",
+      "membershipEndDate": "2026-05-29T06:30:00.000Z",
+      "status": "active",
+      "source": "manual",
+      "notes": "",
+      "createdAt": "2026-04-27T10:29:59.780Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_rhujokc7",
+      "name": "test",
+      "phone": "919999999999",
+      "seatId": null,
+      "membershipStartDate": "2026-04-29T06:30:00.000Z",
+      "membershipEndDate": "2026-05-29T06:30:00.000Z",
+      "status": "inactive",
+      "source": "manual",
+      "notes": "Deactivated from dashboard",
+      "createdAt": "2026-04-27T10:28:52.179Z",
+      "manuallyDeactivated": true,
+      "keepRevenueCurrentMonth": true,
+      "deactivatedAt": "2026-04-27T10:29:12.252Z"
+    },
+    {
+      "id": "stu_d3rbqc66",
+      "name": "Wajahat jeelani",
+      "phone": "916006807981",
+      "seatId": null,
+      "membershipStartDate": "2026-04-16T14:15:27.000Z",
+      "membershipEndDate": "2026-05-16T06:30:00.000Z",
+      "status": "inactive",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form | Deactivated from dashboard",
+      "importSourceKey": "wajahat jeelani|916006807981|2026-04-16T14:15:27.000Z|2026-05-16T06:30:00.000Z",
+      "createdAt": "2026-04-17T04:23:46.142Z",
+      "manuallyDeactivated": true,
+      "keepRevenueCurrentMonth": true,
+      "deactivatedAt": "2026-04-23T04:59:07.486Z"
+    },
+    {
+      "id": "stu_cxlbvtf8",
+      "name": "Basharat hussain khan",
+      "phone": "918899521851",
+      "seatId": null,
+      "membershipStartDate": "2026-04-16T05:10:56.000Z",
+      "membershipEndDate": "2026-05-16T06:30:00.000Z",
+      "status": "inactive",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form | Deactivated from dashboard",
+      "importSourceKey": "basharat hussain khan|918899521851|2026-04-16T05:10:56.000Z|2026-05-16T06:30:00.000Z",
+      "createdAt": "2026-04-16T05:20:06.990Z",
+      "manuallyDeactivated": true,
+      "keepRevenueCurrentMonth": true,
+      "deactivatedAt": "2026-04-22T04:54:39.537Z"
+    },
+    {
+      "id": "stu_ew90jt9e",
+      "name": "Tauseef-ul-hamid",
+      "phone": "918899977745",
+      "seatId": 30,
+      "membershipStartDate": "2026-04-15T04:25:20.000Z",
+      "membershipEndDate": "2026-05-15T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "tauseef-ul-hamid|918899977745|2026-04-15T04:25:20.000Z|2026-05-15T06:30:00.000Z",
+      "createdAt": "2026-04-15T04:25:44.437Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_v2sab61m",
+      "name": "Arbeena",
+      "phone": "919622661681",
+      "seatId": 33,
+      "membershipStartDate": "2026-04-01T06:30:00.000Z",
+      "membershipEndDate": "2026-05-01T06:30:00.000Z",
+      "status": "active",
+      "source": "manual",
+      "notes": "",
+      "createdAt": "2026-04-14T08:09:25.156Z",
+      "manuallyDeactivated": false,
+      "membershipReminderSentForEndDate": "2026-05-01T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-30T04:21:16.204Z"
+    },
+    {
+      "id": "stu_w30zgscm",
+      "name": "Insha nabi",
+      "phone": "919541332230",
+      "seatId": 42,
+      "membershipStartDate": "2026-04-14T06:39:04.000Z",
+      "membershipEndDate": "2026-05-14T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "insha nabi|919541332230|2026-04-14T06:39:04.000Z|2026-05-14T06:30:00.000Z",
+      "createdAt": "2026-04-14T06:39:42.582Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_cxki38nr",
+      "name": "Sajid Lateef",
+      "phone": "919103464606",
+      "seatId": 13,
+      "membershipStartDate": "2026-04-11T06:30:00.000Z",
+      "membershipEndDate": "2026-05-11T06:30:00.000Z",
+      "status": "active",
+      "source": "manual",
+      "notes": "",
+      "createdAt": "2026-04-13T04:31:03.017Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_79xv1y9f",
+      "name": "Faisal Noor",
+      "phone": "919103363724",
+      "seatId": 10,
+      "membershipStartDate": "2026-04-12T06:26:37.000Z",
+      "membershipEndDate": "2026-05-12T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "faisal noor|919103363724|2026-04-12T06:26:37.000Z|2026-05-12T06:30:00.000Z",
+      "createdAt": "2026-04-12T06:27:17.266Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_274fwtey",
+      "name": "Ishtiyaq Qadir",
+      "phone": "917889308642",
+      "seatId": 32,
+      "membershipStartDate": "2026-04-10T04:14:45.000Z",
+      "membershipEndDate": "2026-05-10T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "ishtiyaq qadir|917889308642|2026-04-10T04:14:45.000Z|2026-05-10T06:30:00.000Z",
+      "createdAt": "2026-04-10T04:14:58.014Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_sei6zcg1",
+      "name": "Suzain khaliq",
+      "phone": "919186088890",
+      "seatId": 44,
+      "membershipStartDate": "2026-04-09T13:24:49.000Z",
+      "membershipEndDate": "2026-05-09T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "suzain khaliq|919186088890|2026-04-09T13:24:49.000Z|2026-05-09T06:30:00.000Z",
+      "createdAt": "2026-04-10T04:12:58.545Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_dqxvzayy",
+      "name": "Suhaib Shabir",
+      "phone": "918491017544",
+      "seatId": 29,
+      "membershipStartDate": "2026-04-08T07:20:09.000Z",
+      "membershipEndDate": "2026-05-08T06:30:00.000Z",
+      "status": "active",
+      "source": "google_form",
+      "notes": "Auto-imported from Google Form",
+      "importSourceKey": "suhaib shabir|918491017544|2026-04-08T07:20:09.000Z|2026-05-08T06:30:00.000Z",
+      "createdAt": "2026-04-08T07:20:32.629Z",
+      "manuallyDeactivated": false
+    },
+    {
+      "id": "stu_mep4bp4r",
+      "name": "Gawhar",
+      "phone": "919682691028",
+      "seatId": 25,
+      "membershipStartDate": "2026-04-06T06:30:00.000Z",
+      "membershipEndDate": "2026-05-06T06:30:00.000Z",
+      "status": "active",
+      "source": "manual",
+      "notes": "",
+      "createdAt": "2026-04-08T04:25:06.597Z",
+      "manuallyDeactivated": false
+    },
+    {
       "id": "stu_hkp81hgi",
       "name": "Abid Ali",
       "phone": "917006313789",
-      "seatId": null,
+      "seatId": 27,
       "membershipStartDate": "2026-04-07T07:14:07.000Z",
       "membershipEndDate": "2026-05-07T06:30:00.000Z",
       "status": "active",
@@ -380,35 +608,43 @@
       "notes": "Auto-imported from Google Form",
       "importSourceKey": "ulfat ashraf|919596591163|2026-04-01T05:15:48.000Z|2026-05-01T06:30:00.000Z",
       "createdAt": "2026-04-01T06:38:12.218Z",
-      "manuallyDeactivated": false
+      "manuallyDeactivated": false,
+      "membershipReminderSentForEndDate": "2026-05-01T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-30T04:21:23.583Z"
     },
     {
       "id": "stu_296cp7vf",
       "name": "Umer by Rezwan",
       "phone": "919149535018",
-      "seatId": 34,
+      "seatId": null,
       "membershipStartDate": "2026-03-16T06:30:00.000Z",
       "membershipEndDate": "2026-04-16T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "manual",
       "notes": "",
       "createdAt": "2026-04-01T04:10:15.125Z",
-      "manuallyDeactivated": false
+      "manuallyDeactivated": false,
+      "membershipReminderSentForEndDate": "2026-04-16T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-15T04:14:17.014Z"
     },
     {
       "id": "stu_7zrf9jhb",
       "name": "Aftab khan",
       "phone": "919148633715",
-      "seatId": 31,
+      "seatId": null,
       "membershipStartDate": "2026-04-01T06:30:00.000Z",
       "membershipEndDate": "2026-05-01T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "google_form",
-      "notes": "Auto-imported from Google Form",
+      "notes": "Auto-imported from Google Form | Deactivated from dashboard",
       "importSourceKey": "aftab khan|919148633715|2026-03-30T10:56:30.000Z|2026-04-30T06:30:00.000Z",
       "createdAt": "2026-03-30T11:17:06.740Z",
-      "manuallyDeactivated": false,
-      "manualDateOverride": true
+      "manuallyDeactivated": true,
+      "manualDateOverride": true,
+      "membershipReminderSentForEndDate": "2026-05-01T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-30T04:21:06.305Z",
+      "keepRevenueCurrentMonth": true,
+      "deactivatedAt": "2026-04-30T04:30:47.699Z"
     },
     {
       "id": "stu_19gx8zko",
@@ -417,12 +653,14 @@
       "seatId": null,
       "membershipStartDate": "2026-03-21T06:30:00.000Z",
       "membershipEndDate": "2026-04-21T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "manual",
       "notes": "",
       "createdAt": "2026-03-30T10:01:56.688Z",
       "manuallyDeactivated": false,
-      "manualDateOverride": true
+      "manualDateOverride": true,
+      "membershipReminderSentForEndDate": "2026-04-21T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-20T04:14:11.168Z"
     },
     {
       "id": "stu_tyvnrs8d",
@@ -458,29 +696,35 @@
       "id": "stu_i57c0jcq",
       "name": "INAYAT ULLAH QADIR",
       "phone": "919149547676",
-      "seatId": 7,
+      "seatId": null,
       "membershipStartDate": "2026-03-29T09:07:03.000Z",
       "membershipEndDate": "2026-04-29T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "google_form",
       "notes": "Auto-imported from Google Form",
       "importSourceKey": "inayat ullah qadir|919149547676|2026-03-29T09:07:03.000Z|2026-04-29T06:30:00.000Z",
       "createdAt": "2026-03-30T06:49:39.972Z",
-      "manuallyDeactivated": false
+      "manuallyDeactivated": false,
+      "membershipReminderSentForEndDate": "2026-04-29T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-28T04:24:48.925Z"
     },
     {
       "id": "stu_d46ebsss",
       "name": "Musadiq hussain",
       "phone": "919906900105",
-      "seatId": 35,
+      "seatId": null,
       "membershipStartDate": "2026-03-28T13:31:14.000Z",
       "membershipEndDate": "2026-04-28T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "google_form",
-      "notes": "Auto-imported from Google Form",
+      "notes": "Auto-imported from Google Form | Deactivated from dashboard",
       "importSourceKey": "musadiq hussain|919906900105|2026-03-28T13:31:14.000Z|2026-04-28T06:30:00.000Z",
       "createdAt": "2026-03-30T06:49:39.972Z",
-      "manuallyDeactivated": false
+      "manuallyDeactivated": true,
+      "membershipReminderSentForEndDate": "2026-04-28T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-27T04:30:21.175Z",
+      "keepRevenueCurrentMonth": true,
+      "deactivatedAt": "2026-04-27T10:29:28.939Z"
     },
     {
       "id": "stu_6fqvw4rv",
@@ -501,14 +745,16 @@
       "id": "stu_plht2gx3",
       "name": "Sabiro",
       "phone": "919906615625",
-      "seatId": 22,
+      "seatId": null,
       "membershipStartDate": "2026-03-24T06:30:00.000Z",
       "membershipEndDate": "2026-04-24T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "manual",
       "notes": "",
       "createdAt": "2026-03-28T07:05:40.587Z",
-      "manuallyDeactivated": false
+      "manuallyDeactivated": false,
+      "membershipReminderSentForEndDate": "2026-04-24T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-23T04:58:40.314Z"
     },
     {
       "id": "stu_v0828thh",
@@ -529,14 +775,16 @@
       "id": "stu_31ufzjai",
       "name": "Sajid  Lateef",
       "phone": "919103464606",
-      "seatId": 13,
+      "seatId": null,
       "membershipStartDate": "2026-03-10T06:30:00.000Z",
       "membershipEndDate": "2026-04-10T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "manual",
       "notes": "",
       "createdAt": "2026-03-17T04:02:42.567Z",
-      "manuallyDeactivated": false
+      "manuallyDeactivated": false,
+      "membershipReminderSentForEndDate": "2026-04-10T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-09T04:04:18.602Z"
     },
     {
       "id": "stu_uci3uni4",
@@ -556,10 +804,10 @@
       "id": "stu_nmvgb5xp",
       "name": "Saqiya",
       "phone": "917051717735",
-      "seatId": 42,
+      "seatId": null,
       "membershipStartDate": "2026-03-08T06:30:00.000Z",
       "membershipEndDate": "2026-04-08T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "manual",
       "notes": "",
       "createdAt": "2026-03-09T13:41:56.053Z",
@@ -1063,10 +1311,10 @@
       "id": "stu_g0qasxae",
       "name": "Rezwan haneef khan",
       "phone": "919149535018",
-      "seatId": 20,
+      "seatId": null,
       "membershipStartDate": "2026-01-20T06:30:00.000Z",
       "membershipEndDate": "2026-04-20T06:30:00.000Z",
-      "status": "active",
+      "status": "inactive",
       "source": "google_form",
       "notes": "Auto-imported from Google Form",
       "importSourceKey": "rezwan haneef khan|919149535018|2026-01-21T09:01:49.000Z|2026-04-21T06:30:00.000Z",
@@ -1183,16 +1431,190 @@
   ],
   "payments": [
     {
+      "id": "pay_gd3rheeg",
+      "studentId": "stu_ndqoyir7",
+      "amount": 1000,
+      "paidAt": "2026-04-25T06:30:00.000Z",
+      "method": "Cash",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Manual enrollment"
+    },
+    {
+      "id": "pay_500wpghc",
+      "studentId": "stu_9mt9v9bl",
+      "amount": 1,
+      "paidAt": "2026-04-28T12:27:10.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported",
+      "manualAmountOverride": true,
+      "manualAmountUpdatedAt": "2026-04-29T04:19:14.220Z"
+    },
+    {
+      "id": "pay_7zoqw85q",
+      "studentId": "stu_xy90h3ur",
+      "amount": 1200,
+      "paidAt": "2026-04-28T05:35:26.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported"
+    },
+    {
+      "id": "pay_k64slo48",
+      "studentId": "stu_wmwkj9vy",
+      "amount": 1200,
+      "paidAt": "2026-04-29T06:30:00.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Manual enrollment"
+    },
+    {
+      "id": "pay_75mnf93z",
+      "studentId": "stu_rhujokc7",
+      "amount": 1,
+      "paidAt": "2026-04-29T06:30:00.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Manual enrollment"
+    },
+    {
+      "id": "pay_c7nu800h",
+      "studentId": "stu_d3rbqc66",
+      "amount": 1,
+      "paidAt": "2026-04-16T14:15:27.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported",
+      "manualAmountOverride": true,
+      "manualAmountUpdatedAt": "2026-04-17T04:23:58.816Z"
+    },
+    {
+      "id": "pay_mvlawblg",
+      "studentId": "stu_cxlbvtf8",
+      "amount": 1,
+      "paidAt": "2026-04-16T05:10:56.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported",
+      "manualAmountOverride": true,
+      "manualAmountUpdatedAt": "2026-04-22T04:53:34.078Z"
+    },
+    {
+      "id": "pay_4lvldk1t",
+      "studentId": "stu_ew90jt9e",
+      "amount": 1200,
+      "paidAt": "2026-04-15T04:25:20.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported"
+    },
+    {
+      "id": "pay_9982pj68",
+      "studentId": "stu_v2sab61m",
+      "amount": 1000,
+      "paidAt": "2026-04-01T06:30:00.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Manual enrollment"
+    },
+    {
+      "id": "pay_3fope1sz",
+      "studentId": "stu_w30zgscm",
+      "amount": 1200,
+      "paidAt": "2026-04-14T06:39:04.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported"
+    },
+    {
+      "id": "pay_epmc0f0h",
+      "studentId": "stu_cxki38nr",
+      "amount": 1200,
+      "paidAt": "2026-04-11T06:30:00.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Manual enrollment"
+    },
+    {
+      "id": "pay_iapgm683",
+      "studentId": "stu_79xv1y9f",
+      "amount": 1200,
+      "paidAt": "2026-04-12T06:26:37.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported",
+      "manualAmountOverride": true,
+      "manualAmountUpdatedAt": "2026-04-13T05:15:25.811Z"
+    },
+    {
+      "id": "pay_zrzwmbjz",
+      "studentId": "stu_274fwtey",
+      "amount": 1200,
+      "paidAt": "2026-04-10T04:14:45.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported",
+      "manualAmountOverride": true,
+      "manualAmountUpdatedAt": "2026-04-12T06:28:04.340Z"
+    },
+    {
+      "id": "pay_l4r2vffw",
+      "studentId": "stu_sei6zcg1",
+      "amount": 1200,
+      "paidAt": "2026-04-09T13:24:49.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported",
+      "manualAmountOverride": true,
+      "manualAmountUpdatedAt": "2026-04-13T04:55:47.366Z"
+    },
+    {
+      "id": "pay_u11bwll3",
+      "studentId": "stu_dqxvzayy",
+      "amount": 1200,
+      "paidAt": "2026-04-08T07:20:09.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Auto-imported",
+      "manualAmountOverride": true,
+      "manualAmountUpdatedAt": "2026-04-09T05:25:32.809Z"
+    },
+    {
+      "id": "pay_agmdkca4",
+      "studentId": "stu_mep4bp4r",
+      "amount": 1200,
+      "paidAt": "2026-04-06T06:30:00.000Z",
+      "method": "Online",
+      "planMonths": 1,
+      "receiptStatus": "skipped",
+      "notes": "Manual enrollment"
+    },
+    {
       "id": "pay_5i8ri1tk",
       "studentId": "stu_hkp81hgi",
-      "amount": 1,
+      "amount": 1200,
       "paidAt": "2026-04-07T07:14:07.000Z",
       "method": "Online",
       "planMonths": 1,
-      "receiptStatus": "pending",
+      "receiptStatus": "skipped",
       "notes": "Auto-imported",
       "manualAmountOverride": true,
-      "manualAmountUpdatedAt": "2026-04-07T07:14:53.956Z"
+      "manualAmountUpdatedAt": "2026-04-08T05:17:00.782Z"
     },
     {
       "id": "pay_8wlfwy4y",
@@ -1301,7 +1723,7 @@
     {
       "id": "pay_g5oj12zq",
       "studentId": "stu_19gx8zko",
-      "amount": 1,
+      "amount": 1200,
       "paidAt": "2026-03-21T06:30:00.000Z",
       "method": "Online",
       "planMonths": 1,
@@ -1310,7 +1732,7 @@
       "manualDateOverride": true,
       "manualDateUpdatedAt": "2026-03-30T10:02:31.408Z",
       "manualAmountOverride": true,
-      "manualAmountUpdatedAt": "2026-03-30T10:54:12.559Z"
+      "manualAmountUpdatedAt": "2026-04-14T08:08:21.803Z"
     },
     {
       "id": "pay_9zv5axjb",
@@ -1319,7 +1741,7 @@
       "paidAt": "2026-02-21T06:30:00.000Z",
       "method": "Online",
       "planMonths": 2,
-      "receiptStatus": "pending",
+      "receiptStatus": "skipped",
       "notes": "Manual enrollment"
     },
     {
@@ -1878,13 +2300,174 @@
   ],
   "receiptQueue": [
     {
+      "id": "rcpt_hbp9tce0",
+      "paymentId": "pay_gd3rheeg",
+      "studentId": "stu_ndqoyir7",
+      "phone": "919906615625",
+      "message": "Hello Sabiro,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1000\nPaid on: 25/4/2026\nValid till: 25/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-29T04:57:01.299Z",
+      "decidedAt": "2026-04-29T06:09:02.978Z"
+    },
+    {
+      "id": "rcpt_1dsl9sra",
+      "paymentId": "pay_500wpghc",
+      "studentId": "stu_9mt9v9bl",
+      "phone": "919906927098",
+      "message": "Hello Munazir Showkat,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 28/4/2026\nValid till: 28/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-29T04:19:06.399Z",
+      "decidedAt": "2026-04-29T04:19:59.826Z"
+    },
+    {
+      "id": "rcpt_eqdhl8ih",
+      "paymentId": "pay_7zoqw85q",
+      "studentId": "stu_xy90h3ur",
+      "phone": "918825001731",
+      "message": "Hello Mohammad Aaqib Bhat,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 28/4/2026\nValid till: 28/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-28T05:59:20.070Z",
+      "decidedAt": "2026-04-29T04:20:00.888Z"
+    },
+    {
+      "id": "rcpt_91ybhhj6",
+      "paymentId": "pay_k64slo48",
+      "studentId": "stu_wmwkj9vy",
+      "phone": "919906900105",
+      "message": "Hello Musadiq Hussain,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 29/4/2026\nValid till: 29/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-27T10:29:59.781Z",
+      "decidedAt": "2026-04-27T10:30:10.881Z"
+    },
+    {
+      "id": "rcpt_r65qfvhh",
+      "paymentId": "pay_75mnf93z",
+      "studentId": "stu_rhujokc7",
+      "phone": "919999999999",
+      "message": "Hello test,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1\nPaid on: 29/4/2026\nValid till: 29/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-27T10:28:52.195Z",
+      "decidedAt": "2026-04-27T10:30:11.386Z"
+    },
+    {
+      "id": "rcpt_xzjmhi3h",
+      "paymentId": "pay_c7nu800h",
+      "studentId": "stu_d3rbqc66",
+      "phone": "916006807981",
+      "message": "Hello Wajahat jeelani,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 16/4/2026\nValid till: 16/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-17T04:23:46.165Z",
+      "decidedAt": "2026-04-23T04:59:10.448Z"
+    },
+    {
+      "id": "rcpt_1yh80evv",
+      "paymentId": "pay_mvlawblg",
+      "studentId": "stu_cxlbvtf8",
+      "phone": "918899521851",
+      "message": "Hello Basharat hussain khan,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 16/4/2026\nValid till: 16/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-16T05:20:07.019Z",
+      "decidedAt": "2026-04-23T04:59:02.889Z"
+    },
+    {
+      "id": "rcpt_vic3mg3r",
+      "paymentId": "pay_4lvldk1t",
+      "studentId": "stu_ew90jt9e",
+      "phone": "918899977745",
+      "message": "Hello Tauseef-ul-hamid,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 15/4/2026\nValid till: 15/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-15T04:25:44.438Z",
+      "decidedAt": "2026-04-16T04:28:51.490Z"
+    },
+    {
+      "id": "rcpt_ermn35vj",
+      "paymentId": "pay_9982pj68",
+      "studentId": "stu_v2sab61m",
+      "phone": "919622661681",
+      "message": "Hello Arbeena,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1000\nPaid on: 1/4/2026\nValid till: 1/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-14T08:09:25.156Z",
+      "decidedAt": "2026-04-15T04:14:14.175Z"
+    },
+    {
+      "id": "rcpt_zb4rgevz",
+      "paymentId": "pay_3fope1sz",
+      "studentId": "stu_w30zgscm",
+      "phone": "919541332230",
+      "message": "Hello Insha nabi,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 14/4/2026\nValid till: 14/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-14T06:39:42.583Z",
+      "decidedAt": "2026-04-14T06:42:38.792Z"
+    },
+    {
+      "id": "rcpt_16ueh19y",
+      "paymentId": "pay_epmc0f0h",
+      "studentId": "stu_cxki38nr",
+      "phone": "919103464606",
+      "message": "Hello Sajid Lateef,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 11/4/2026\nValid till: 11/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-13T04:31:03.018Z",
+      "decidedAt": "2026-04-13T04:38:59.891Z"
+    },
+    {
+      "id": "rcpt_yjthku9c",
+      "paymentId": "pay_iapgm683",
+      "studentId": "stu_79xv1y9f",
+      "phone": "919103363724",
+      "message": "Hello Faisal Noor,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 12/4/2026\nValid till: 12/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-12T06:27:17.289Z",
+      "decidedAt": "2026-04-13T12:09:18.476Z"
+    },
+    {
+      "id": "rcpt_8i4y90tm",
+      "paymentId": "pay_zrzwmbjz",
+      "studentId": "stu_274fwtey",
+      "phone": "917889308642",
+      "message": "Hello Ishtiyaq Qadir,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 10/4/2026\nValid till: 10/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-10T04:14:58.014Z",
+      "decidedAt": "2026-04-13T04:39:01.898Z"
+    },
+    {
+      "id": "rcpt_xf13n5hs",
+      "paymentId": "pay_l4r2vffw",
+      "studentId": "stu_sei6zcg1",
+      "phone": "919186088890",
+      "message": "Hello Suzain khaliq,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 9/4/2026\nValid till: 9/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-10T04:12:58.548Z",
+      "decidedAt": "2026-04-13T05:08:17.301Z"
+    },
+    {
+      "id": "rcpt_vb9eu0bh",
+      "paymentId": "pay_u11bwll3",
+      "studentId": "stu_dqxvzayy",
+      "phone": "918491017544",
+      "message": "Hello Suhaib Shabir,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 8/4/2026\nValid till: 8/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-08T07:20:32.634Z",
+      "decidedAt": "2026-04-09T11:21:01.878Z"
+    },
+    {
+      "id": "rcpt_z8l35xy1",
+      "paymentId": "pay_agmdkca4",
+      "studentId": "stu_mep4bp4r",
+      "phone": "919682691028",
+      "message": "Hello Gawhar,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 6/4/2026\nValid till: 6/5/2026\nThank you.",
+      "status": "skipped",
+      "createdAt": "2026-04-08T04:25:06.599Z",
+      "decidedAt": "2026-04-08T04:36:14.076Z"
+    },
+    {
       "id": "rcpt_vdr2p06l",
       "paymentId": "pay_5i8ri1tk",
       "studentId": "stu_hkp81hgi",
       "phone": "917006313789",
       "message": "Hello Abid Ali,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1200\nPaid on: 7/4/2026\nValid till: 7/5/2026\nThank you.",
-      "status": "pending",
-      "createdAt": "2026-04-07T07:14:40.059Z"
+      "status": "skipped",
+      "createdAt": "2026-04-07T07:14:40.059Z",
+      "decidedAt": "2026-04-08T05:20:50.239Z"
     },
     {
       "id": "rcpt_l5jn35zz",
@@ -1992,8 +2575,9 @@
       "studentId": "stu_tyvnrs8d",
       "phone": "917006685897",
       "message": "Hello Rozia Muhammad,\nPayment received for Learning Dock Library subscription.\nSeat: Not assigned\nAmount: Rs 1\nPaid on: 21/2/2026\nValid till: 21/4/2026\nThank you.",
-      "status": "pending",
-      "createdAt": "2026-03-30T10:01:01.821Z"
+      "status": "skipped",
+      "createdAt": "2026-03-30T10:01:01.821Z",
+      "decidedAt": "2026-04-15T04:14:14.841Z"
     },
     {
       "id": "rcpt_iojt7xwr",
@@ -2477,6 +3061,1392 @@
     }
   ],
   "imports": [
+    {
+      "id": "imp_r9omb2l8",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:20:49.648Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_inndkmf2",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:20:25.273Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_ivngkifp",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:14:26.879Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_142mb7hj",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T04:38:31.862Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_0pmclaua",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T04:37:04.332Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_on6jzcqk",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T04:21:02.177Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_49dzfb88",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T04:21:00.294Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_eyxz19r8",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T08:53:22.712Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_gzknuejc",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T08:53:15.880Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_5ob23k3t",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T08:05:19.587Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_4sek66uj",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T08:05:17.668Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_9fjwa97a",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T06:09:06.092Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_ormz8ze0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T06:07:55.757Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_73aeu4qt",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T04:57:25.713Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_3a1md9vd",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T04:57:19.269Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_233pmej2",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T04:46:22.993Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_ed575s9c",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T04:20:37.076Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_d4cx4isc",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T04:20:15.060Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_30kgybon",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T04:20:06.562Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_3u4kkq24",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T04:20:03.586Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_a9wve1j2",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-29T04:19:06.399Z",
+      "createdCount": 1,
+      "skippedCount": 41
+    },
+    {
+      "id": "imp_oadlex83",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T12:13:35.199Z",
+      "createdCount": 0,
+      "skippedCount": 41
+    },
+    {
+      "id": "imp_g8rlqxvp",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T12:13:30.482Z",
+      "createdCount": 0,
+      "skippedCount": 41
+    },
+    {
+      "id": "imp_b980a5s6",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T11:18:36.859Z",
+      "createdCount": 0,
+      "skippedCount": 41
+    },
+    {
+      "id": "imp_s215gaps",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T11:16:59.064Z",
+      "createdCount": 0,
+      "skippedCount": 41
+    },
+    {
+      "id": "imp_syrv6woo",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T06:02:45.000Z",
+      "createdCount": 0,
+      "skippedCount": 41
+    },
+    {
+      "id": "imp_hro0myny",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T05:59:22.090Z",
+      "createdCount": 0,
+      "skippedCount": 41
+    },
+    {
+      "id": "imp_09axnvto",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T05:59:20.070Z",
+      "createdCount": 1,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_36ljcjli",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T05:32:04.182Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_irn48tlm",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T05:31:09.829Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_qip68bjc",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T05:31:03.497Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_1ktpjwlp",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T05:06:02.390Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_6j0yu1qv",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T05:05:45.183Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_cbv62j47",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T04:56:16.342Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_1ohoi28q",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T04:35:34.195Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_3cb2pxne",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T04:29:07.781Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_h8shjh9h",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T04:29:04.751Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_8hstrdao",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T04:28:14.590Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_u6lbc9qy",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T04:27:41.184Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_8acjots2",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-28T04:24:43.789Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_v4maokep",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-27T10:33:51.327Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_1l82z9c6",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-27T10:30:36.412Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_vw7lep6l",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-27T10:30:16.549Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_kexocpxv",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-27T10:29:35.995Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_ri6l2io3",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-27T10:24:00.542Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_yo7lzxy4",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-27T04:51:39.252Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_907kmwfj",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-27T04:37:34.074Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_ydny27va",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-27T04:30:14.721Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_2d9j7fj6",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-25T18:35:42.133Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_ashf7ovw",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-25T18:34:49.524Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_i49tukxk",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-24T06:10:23.369Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_1l5zqfth",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-24T05:37:09.977Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_k8fnytom",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-24T05:18:26.520Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_certy9td",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-24T04:22:04.321Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_4l99i60x",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-23T04:59:18.553Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_1r41ur7y",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-23T04:58:27.991Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_lvwtvfpg",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-22T12:01:36.230Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_l7tdxdno",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-22T06:58:38.995Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_r7q4v57z",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-22T05:40:39.297Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_h7vlwequ",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-22T05:37:20.419Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_di94wa9g",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-22T05:32:14.683Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_2m1rtgi3",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-22T04:54:49.962Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_tqvm1x2w",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-22T04:27:24.246Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_h0oozedl",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-22T04:26:04.319Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_6tq2ruak",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-21T08:16:06.687Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_afaveyzs",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-21T07:43:39.162Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_jzujywm0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-21T04:18:25.937Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_wau9swwu",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-21T04:13:49.350Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_tcle19vs",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-21T04:13:25.082Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_25xvg7ov",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-21T04:10:40.777Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_7rue0amc",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-20T11:18:10.455Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_n33pls03",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-20T10:17:11.217Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_bi1nxuwi",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-20T05:19:41.924Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_8yzmcroa",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-20T04:14:53.551Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_ywgj3flt",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-20T04:14:29.215Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_xnek5u8m",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-20T04:14:01.968Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_di7vvb63",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-19T09:13:12.207Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_lm8afewi",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-19T09:13:09.415Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_jjj2f5pm",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-19T09:13:07.773Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_ny3cpdm0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-17T04:32:10.968Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_4k8pb31u",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-17T04:31:25.928Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_96qrkjsc",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-17T04:31:11.816Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_9z1j7ekp",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-17T04:31:08.038Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_l7968ueu",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-17T04:29:23.491Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_85xdpjxu",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-17T04:26:07.001Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_g8r9a0zl",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-17T04:23:49.438Z",
+      "createdCount": 0,
+      "skippedCount": 40
+    },
+    {
+      "id": "imp_4axk7pju",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-17T04:23:46.165Z",
+      "createdCount": 1,
+      "skippedCount": 39
+    },
+    {
+      "id": "imp_stsi52sn",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-16T08:21:30.733Z",
+      "createdCount": 0,
+      "skippedCount": 39
+    },
+    {
+      "id": "imp_6a0kedef",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-16T08:21:25.781Z",
+      "createdCount": 0,
+      "skippedCount": 39
+    },
+    {
+      "id": "imp_npi0lhrl",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-16T05:20:32.596Z",
+      "createdCount": 0,
+      "skippedCount": 39
+    },
+    {
+      "id": "imp_o2kfw1qg",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-16T05:20:07.019Z",
+      "createdCount": 1,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_y3rdgx2r",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-16T04:28:47.574Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_v3e2dgsb",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-16T04:28:45.158Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_81fm1uyt",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T15:51:50.081Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_93t4rho0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T15:50:15.136Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_m6tp0xwo",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T15:46:24.615Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_5jaxg7u0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T09:21:54.555Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_gfjkk7o9",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T08:47:58.656Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_t22nzcmf",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T08:47:56.769Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_u9rzlfsm",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T06:14:46.793Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_1gm6kobl",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T05:27:13.822Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_mhs4pv1t",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T05:27:11.295Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_zs3klpdx",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T05:26:12.999Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_hk2c6tdw",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T05:26:06.489Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_92o92dt9",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T04:28:41.362Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_c07h1xh7",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T04:28:04.526Z",
+      "createdCount": 0,
+      "skippedCount": 38
+    },
+    {
+      "id": "imp_vfvnbo82",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T04:25:44.438Z",
+      "createdCount": 1,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_rjd1r0xn",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T04:25:19.766Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_uaqkd3n3",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T04:15:10.554Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_5s9n87v5",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T04:14:40.473Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_zzw6fqvz",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T04:14:39.042Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_5z7qmyjn",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-15T04:14:08.117Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_4xa78w2v",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-14T08:16:56.730Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_aobg4cf3",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-14T08:10:04.707Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_vixvj64r",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-14T08:10:03.205Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_qgkfeqci",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-14T08:07:26.148Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_vhyswsv3",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-14T06:42:43.428Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_fyvfouik",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-14T06:42:23.094Z",
+      "createdCount": 0,
+      "skippedCount": 37
+    },
+    {
+      "id": "imp_dse8p2wd",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-14T06:39:42.584Z",
+      "createdCount": 1,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_0qmt362w",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-14T06:38:53.731Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_9zlk2wpb",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T12:04:13.825Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_jicq6r50",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T12:04:09.921Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_ybzbfsi6",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T08:17:12.557Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_tg302h9h",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T08:17:10.648Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_zkfykof3",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T06:23:47.112Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_qsijtlr9",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T05:15:32.326Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_tqt5bnmj",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T05:15:20.889Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_qnp9i9iy",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T05:10:03.904Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_3p69owu2",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T05:08:19.315Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_sqk5lsf6",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:52:56.058Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_yi6vilbe",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:46:47.327Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_yidvw3ca",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:46:43.236Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_upat5qqy",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:44:15.158Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_do2qzmyy",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:43:21.283Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_7pqmuoax",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:43:20.167Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_v6tc25t0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:42:02.551Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_ovpik5u4",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:40:42.574Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_dof9cz4k",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:40:41.311Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_p6reejo0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:38:34.038Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_gap9i5vo",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:24:38.768Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_xbq205w6",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-13T04:24:34.108Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_3ghdblxy",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-12T06:48:29.305Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_dgnjppxm",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-12T06:38:51.247Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_la1ip4b0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-12T06:28:10.588Z",
+      "createdCount": 0,
+      "skippedCount": 36
+    },
+    {
+      "id": "imp_mjqv4d4e",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-12T06:27:17.289Z",
+      "createdCount": 1,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_dysjeiy9",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-12T06:25:17.158Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_j3lge0ns",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-12T06:25:15.202Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_oemuzfig",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-12T04:37:01.770Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_nk0335db",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-11T18:14:43.064Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_93uwj2wg",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-11T18:12:31.702Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_c4u3xpnr",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-11T18:12:29.404Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_2gnwkn0o",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T06:48:51.630Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_ptzyjbpm",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T06:48:50.428Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_hhuts3p3",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T06:09:42.708Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_f7co2lfz",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T06:09:28.572Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_kk434mbi",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T05:48:53.499Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_15i81k3e",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T05:48:21.628Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_xuojwec2",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T04:33:20.901Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_53tr5yl7",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T04:23:55.547Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_9avqck2v",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T04:22:34.419Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_5nd6q1vl",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T04:18:52.971Z",
+      "createdCount": 0,
+      "skippedCount": 35
+    },
+    {
+      "id": "imp_d3hhb3gl",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T04:14:58.014Z",
+      "createdCount": 1,
+      "skippedCount": 34
+    },
+    {
+      "id": "imp_ej5d6wcn",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T04:13:46.575Z",
+      "createdCount": 0,
+      "skippedCount": 34
+    },
+    {
+      "id": "imp_6c0d2z5b",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T04:13:16.207Z",
+      "createdCount": 0,
+      "skippedCount": 34
+    },
+    {
+      "id": "imp_7z2lh2eg",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-10T04:12:58.548Z",
+      "createdCount": 1,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_2okdhoqu",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T11:13:31.331Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_2l2gavpo",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T11:06:03.496Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_ozmonq1b",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T10:54:48.603Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_xbde6s65",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T10:54:44.605Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_e8fgayem",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T07:43:49.877Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_mmnpr10d",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T07:11:22.534Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_lmgjuclm",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T05:42:26.749Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_jv9ty0do",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T05:27:52.104Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_opqy10i9",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T05:26:51.978Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_6lvr8mnd",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T05:25:49.958Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_s7hcbj1s",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T04:04:35.193Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_hfshbqju",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-09T04:04:12.041Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_hddglxa9",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T11:21:03.610Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_bsjzwt5q",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T11:13:47.764Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_979e31bn",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T11:13:21.037Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_oumgpsro",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T09:19:15.613Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_o241qg21",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T09:19:09.480Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_0fs9l4hp",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T07:21:43.585Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_81ri0lj2",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T07:20:38.533Z",
+      "createdCount": 0,
+      "skippedCount": 33
+    },
+    {
+      "id": "imp_o1l3ktd4",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T07:20:32.634Z",
+      "createdCount": 1,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_5vvux94m",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T06:51:12.059Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_ru58tt70",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T06:48:24.688Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_x108g97q",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T06:48:16.211Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_zzc1dg6f",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T06:46:24.015Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_5s6rp4v8",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T05:26:35.055Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_fddfokbz",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T05:20:05.691Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_omk4dd1b",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T05:14:47.161Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_8hs1s0dn",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T04:54:49.791Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_3w81gbig",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T04:54:16.093Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_5p853fp0",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T04:49:16.569Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_dg0wi0bq",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T04:27:26.401Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_xk418tpd",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-08T04:19:37.318Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
+    {
+      "id": "imp_uj7w1vwd",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-07T10:52:20.867Z",
+      "createdCount": 0,
+      "skippedCount": 32
+    },
     {
       "id": "imp_lfbf0o1g",
       "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
@@ -5693,8 +7663,18 @@
   ],
   "meta": {
     "version": 11,
-    "lastAutoImportAt": "2026-04-07T10:49:56.544Z",
+    "lastAutoImportAt": "2026-04-30T06:20:49.648Z",
     "importSeenKeys": [
+      "munazir showkat|919906927098|2026-04-28T12:27:10.000Z|2026-05-28T06:30:00.000Z",
+      "mohammad aaqib bhat|918825001731|2026-04-28T05:35:26.000Z|2026-05-28T06:30:00.000Z",
+      "wajahat jeelani|916006807981|2026-04-16T14:15:27.000Z|2026-05-16T06:30:00.000Z",
+      "basharat hussain khan|918899521851|2026-04-16T05:10:56.000Z|2026-05-16T06:30:00.000Z",
+      "tauseef-ul-hamid|918899977745|2026-04-15T04:25:20.000Z|2026-05-15T06:30:00.000Z",
+      "insha nabi|919541332230|2026-04-14T06:39:04.000Z|2026-05-14T06:30:00.000Z",
+      "faisal noor|919103363724|2026-04-12T06:26:37.000Z|2026-05-12T06:30:00.000Z",
+      "ishtiyaq qadir|917889308642|2026-04-10T04:14:45.000Z|2026-05-10T06:30:00.000Z",
+      "suzain khaliq|919186088890|2026-04-09T13:24:49.000Z|2026-05-09T06:30:00.000Z",
+      "suhaib shabir|918491017544|2026-04-08T07:20:09.000Z|2026-05-08T06:30:00.000Z",
       "abid ali|917006313789|2026-04-07T07:14:07.000Z|2026-05-07T06:30:00.000Z",
       "muneer ahmad mir|917006376499|2026-04-07T04:42:46.000Z|2026-05-07T06:30:00.000Z",
       "mazhar kabir|919541959874|2026-04-06T09:34:50.000Z|2026-05-06T06:30:00.000Z",
@@ -5740,14 +7720,14 @@
         "stu:stu_yjwql76z",
         "stu:stu_7uwcm928"
       ],
-      "2026-03": [
-        "stu:stu_19gx8zko",
-        "stu:stu_kr9q5h5h"
-      ],
+      "2026-03": [],
       "2026-04": [
-        "stu:stu_hkp81hgi"
+        "stu:stu_9mt9v9bl",
+        "stu:stu_rhujokc7",
+        "stu:stu_d3rbqc66",
+        "stu:stu_cxlbvtf8"
       ]
     },
-    "lastStateSyncAt": "2026-04-06T04:17:09.338Z"
+    "lastStateSyncAt": "2026-04-30T04:20:59.482Z"
   }
 }
