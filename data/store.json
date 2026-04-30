@@ -731,15 +731,17 @@
       "name": "MIR ABRAR HABIB",
       "phone": "918082955328",
       "seatId": 5,
-      "membershipStartDate": "2026-03-28T06:30:00.000Z",
-      "membershipEndDate": "2026-05-28T06:30:00.000Z",
+      "membershipStartDate": "2026-03-30T06:30:00.000Z",
+      "membershipEndDate": "2026-04-30T06:30:00.000Z",
       "status": "active",
       "source": "google_form",
       "notes": "Auto-imported from Google Form",
       "importSourceKey": "mir abrar habib|918082955328|2026-03-28T07:28:40.000Z|2026-06-28T06:30:00.000Z",
       "createdAt": "2026-03-30T06:49:39.922Z",
       "manuallyDeactivated": false,
-      "manualDateOverride": true
+      "manualDateOverride": true,
+      "membershipReminderSentForEndDate": "2026-04-30T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-30T06:50:23.723Z"
     },
     {
       "id": "stu_plht2gx3",
@@ -1782,15 +1784,15 @@
       "id": "pay_kzs5wt2h",
       "studentId": "stu_6fqvw4rv",
       "amount": 1200,
-      "paidAt": "2026-03-28T07:28:40.000Z",
+      "paidAt": "2026-03-30T06:30:00.000Z",
       "method": "Online",
-      "planMonths": 2,
+      "planMonths": 1,
       "receiptStatus": "skipped",
       "notes": "Auto-imported",
       "manualAmountOverride": true,
       "manualAmountUpdatedAt": "2026-04-02T03:39:17.107Z",
       "manualDateOverride": true,
-      "manualDateUpdatedAt": "2026-03-30T10:10:19.505Z"
+      "manualDateUpdatedAt": "2026-04-30T06:50:22.260Z"
     },
     {
       "id": "pay_wtv43tdt",
@@ -3061,6 +3063,34 @@
     }
   ],
   "imports": [
+    {
+      "id": "imp_s8s99ata",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:50:00.948Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_vx49fezu",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:48:57.298Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_trmgvc4b",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:48:51.576Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_rs3bkasd",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:48:29.760Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
     {
       "id": "imp_r9omb2l8",
       "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
@@ -7663,7 +7693,7 @@
   ],
   "meta": {
     "version": 11,
-    "lastAutoImportAt": "2026-04-30T06:20:49.648Z",
+    "lastAutoImportAt": "2026-04-30T06:50:00.948Z",
     "importSeenKeys": [
       "munazir showkat|919906927098|2026-04-28T12:27:10.000Z|2026-05-28T06:30:00.000Z",
       "mohammad aaqib bhat|918825001731|2026-04-28T05:35:26.000Z|2026-05-28T06:30:00.000Z",
