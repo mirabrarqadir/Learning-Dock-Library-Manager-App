@@ -92,7 +92,7 @@ function makeMembershipReminderMessage(student) {
     "",
     "Thank you.",
     "",
-    "___This is an auto sent reminder text by the App.___"
+    "```This is an auto sent reminder text by the App```"
   ].join("\n");
 }
 

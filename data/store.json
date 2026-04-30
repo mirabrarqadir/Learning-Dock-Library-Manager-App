@@ -283,7 +283,10 @@
       "source": "manual",
       "notes": "",
       "createdAt": "2026-04-29T04:57:01.294Z",
-      "manuallyDeactivated": false
+      "manuallyDeactivated": false,
+      "manualDateOverride": true,
+      "membershipReminderSentForEndDate": "2026-04-30T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-30T06:53:34.705Z"
     },
     {
       "id": "stu_9mt9v9bl",
@@ -306,14 +309,17 @@
       "name": "Mohammad Aaqib Bhat",
       "phone": "918825001731",
       "seatId": 12,
-      "membershipStartDate": "2026-04-28T05:35:26.000Z",
+      "membershipStartDate": "2026-04-28T06:30:00.000Z",
       "membershipEndDate": "2026-05-28T06:30:00.000Z",
       "status": "active",
       "source": "google_form",
       "notes": "Auto-imported from Google Form",
       "importSourceKey": "mohammad aaqib bhat|918825001731|2026-04-28T05:35:26.000Z|2026-05-28T06:30:00.000Z",
       "createdAt": "2026-04-28T05:59:20.063Z",
-      "manuallyDeactivated": false
+      "manuallyDeactivated": false,
+      "manualDateOverride": true,
+      "membershipReminderSentForEndDate": "2026-04-30T06:30:00.000Z",
+      "membershipReminderSentAt": "2026-04-30T06:54:43.434Z"
     },
     {
       "id": "stu_wmwkj9vy",
@@ -731,8 +737,8 @@
       "name": "MIR ABRAR HABIB",
       "phone": "918082955328",
       "seatId": 5,
-      "membershipStartDate": "2026-03-30T06:30:00.000Z",
-      "membershipEndDate": "2026-04-30T06:30:00.000Z",
+      "membershipStartDate": "2026-03-28T06:30:00.000Z",
+      "membershipEndDate": "2026-05-28T06:30:00.000Z",
       "status": "active",
       "source": "google_form",
       "notes": "Auto-imported from Google Form",
@@ -1440,7 +1446,9 @@
       "method": "Cash",
       "planMonths": 1,
       "receiptStatus": "skipped",
-      "notes": "Manual enrollment"
+      "notes": "Manual enrollment",
+      "manualDateOverride": true,
+      "manualDateUpdatedAt": "2026-04-30T06:54:32.705Z"
     },
     {
       "id": "pay_500wpghc",
@@ -1458,11 +1466,13 @@
       "id": "pay_7zoqw85q",
       "studentId": "stu_xy90h3ur",
       "amount": 1200,
-      "paidAt": "2026-04-28T05:35:26.000Z",
+      "paidAt": "2026-04-28T06:30:00.000Z",
       "method": "Online",
       "planMonths": 1,
       "receiptStatus": "skipped",
-      "notes": "Auto-imported"
+      "notes": "Auto-imported",
+      "manualDateOverride": true,
+      "manualDateUpdatedAt": "2026-04-30T06:56:05.561Z"
     },
     {
       "id": "pay_k64slo48",
@@ -1784,15 +1794,15 @@
       "id": "pay_kzs5wt2h",
       "studentId": "stu_6fqvw4rv",
       "amount": 1200,
-      "paidAt": "2026-03-30T06:30:00.000Z",
+      "paidAt": "2026-03-28T06:30:00.000Z",
       "method": "Online",
-      "planMonths": 1,
+      "planMonths": 2,
       "receiptStatus": "skipped",
       "notes": "Auto-imported",
       "manualAmountOverride": true,
       "manualAmountUpdatedAt": "2026-04-02T03:39:17.107Z",
       "manualDateOverride": true,
-      "manualDateUpdatedAt": "2026-04-30T06:50:22.260Z"
+      "manualDateUpdatedAt": "2026-04-30T06:53:08.400Z"
     },
     {
       "id": "pay_wtv43tdt",
@@ -3063,6 +3073,20 @@
     }
   ],
   "imports": [
+    {
+      "id": "imp_b9khnsxc",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:56:09.378Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
+    {
+      "id": "imp_qo0seqy2",
+      "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
+      "importedAt": "2026-04-30T06:53:12.284Z",
+      "createdCount": 0,
+      "skippedCount": 42
+    },
     {
       "id": "imp_s8s99ata",
       "source": "https://docs.google.com/spreadsheets/d/1MfrnJEIrIrXgPDliNZWwTU_jF5GVwrdEYzZs8UJePIw/gviz/tq?tqx=out:csv",
@@ -7693,7 +7717,7 @@
   ],
   "meta": {
     "version": 11,
-    "lastAutoImportAt": "2026-04-30T06:50:00.948Z",
+    "lastAutoImportAt": "2026-04-30T06:56:09.378Z",
     "importSeenKeys": [
       "munazir showkat|919906927098|2026-04-28T12:27:10.000Z|2026-05-28T06:30:00.000Z",
       "mohammad aaqib bhat|918825001731|2026-04-28T05:35:26.000Z|2026-05-28T06:30:00.000Z",
